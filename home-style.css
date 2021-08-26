@@ -31,6 +31,7 @@ ul {
   height: 90px;
   list-style: none;
   margin: 33px 38px 0px 0px;
+  display: inline;
 }
 
 ul li {
@@ -56,6 +57,41 @@ ul li {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 740px) and (max-width: 1025px) {
+  header {
+    grid-gap: 0 0;
+    border: 2px solid black;
+  }
+
+  .intro {
+    width: 160px;
+    height: 63px;
+    border: 2px solid black;
+    margin: 20px 340px 9px 64px;
+  }
+
+  .intro p {
+    font-size: 22px;
+  }
+
+  ul {
+    width: 117px;
+    height: 90px;
+    margin: 0px 0px 20px 66px;
+    border: 2px solid black;
+  }
+
+  ul li {
+    padding: 0px 4px;
+    font-size: 14px;
+  }
+
+  .button {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
 
 /* Section */
