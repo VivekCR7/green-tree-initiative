@@ -419,3 +419,272 @@ ul li {
     font-size: 28px;
   }
 }
+
+/* what we do */
+
+.section-3 {
+  height: 1600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #354463;
+}
+
+.what-we-do {
+  width: 160px;
+  height: 40px;
+  background-color: white;
+}
+
+.what-we-do p {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 10px;
+  color: #354463;
+}
+
+.text-quote {
+  width: 302px;
+  height: 134px;
+}
+
+.text-quote p {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.box1 {
+  width: 312px;
+  height: 415px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+}
+
+.image {
+  width: 248px;
+  height: 176px;
+  background-size: cover;
+  position: relative;
+  top: -33px;
+}
+
+#img-1 {
+  background-image: url(home/tree-planting.png);
+}
+
+#img-2 {
+  background-image: url(home/education-training.png);
+}
+
+#img-3 {
+  background-image: url(home/advocacy.png);
+}
+
+.image-text {
+  width: 248px;
+  height: 120px;
+  text-align: center;
+}
+
+.big1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #354463;
+}
+
+.small1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #354463;
+  padding-top: 10px;
+}
+
+.button2 {
+  width: 152px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #c1f7d5;
+}
+
+.button2 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #354463;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .text-quote {
+    width: 640px;
+    height: 140px;
+  }
+
+  .text-quote p {
+    font-size: 36px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .box1 {
+    width: 640px;
+    height: 280px;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 10px;
+  }
+
+  .image {
+    width: 248px;
+    height: 176px;
+    background-size: cover;
+    position: relative;
+    top: -65px;
+  }
+
+  #img-1 {
+    background-image: url(home/tree-planting.png);
+    background-position: 10%;
+  }
+
+  #img-2 {
+    background-image: url(home/education-training.png);
+  }
+
+  #img-3 {
+    background-image: url(home/advocacy.png);
+  }
+
+  .image-text {
+    width: 248px;
+    height: 120px;
+    text-align: left;
+    margin-right: 35px;
+  }
+
+  .big1 {
+    font-size: 22px;
+  }
+
+  .small1 {
+    font-size: 16px;
+  }
+
+  .button2 {
+    width: 152px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #c1f7d5;
+    position: relative;
+    top: -77px;
+    left: 50px;
+  }
+
+  .button2 p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #354463;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em 0em;
+  }
+
+  .what-we-do {
+    grid-column: 1/4;
+    position: relative;
+    left: -460px;
+  }
+
+  .text-quote {
+    width: 1100px;
+    height: 140px;
+    grid-column: 1/4;
+    position: relative;
+    bottom: 300px;
+  }
+
+  .text-quote p {
+    font-size: 44px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .box1 {
+    width: 320px;
+    height: 528px;
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 300px;
+  }
+
+  .image {
+    width: 320px;
+    height: 224px;
+    background-size: contain;
+    position: relative;
+    left: 20px;
+    top: -70px;
+  }
+
+  #img-1 {
+    background-image: url(home/tree-planting.png);
+  }
+
+  #img-2 {
+    background-image: url(home/education-training.png);
+  }
+
+  #img-3 {
+    background-image: url(home/advocacy.png);
+  }
+
+  .image-text {
+    width: 278px;
+    height: 176px;
+    text-align: left;
+    margin-top: -70px;
+  }
+
+  .big1 {
+    font-size: 28px;
+  }
+
+  .small1 {
+    font-size: 16px;
+  }
+
+  .button2 {
+    width: 152px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #c1f7d5;
+    position: relative;
+    left: -65px;
+  }
+
+  .button2 p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #354463;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
