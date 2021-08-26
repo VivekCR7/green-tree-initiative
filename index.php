@@ -1,5 +1,5 @@
 <?php
 
-    include_once("donation.html");
+    include_once("home.html");
 
 ?>
