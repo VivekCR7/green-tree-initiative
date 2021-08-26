@@ -154,7 +154,6 @@ section {
   display: flex;
   height: 592px;
   justify-content: space-around;
-  align-items: center;
   flex-direction: column;
   background-image: url(home/annie-spratt-135307-unsplash.png);
   background-repeat: no-repeat;
@@ -164,6 +163,7 @@ section {
 .quote {
   width: 312px;
   height: 136px;
+  align-self: center;
 }
 
 .quote p {
@@ -182,6 +182,7 @@ section {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  align-self: center;
 }
 
 .overlay-box {
@@ -225,4 +226,110 @@ section {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .quote {
+    width: 312px;
+    height: 136px;
+    margin-left: -330px;
+    align-self: center;
+  }
+
+  .intro-1 {
+    width: 640px;
+    height: 309px;
+  }
+
+  .overlay-box {
+    position: relative;
+    bottom: 18px;
+    left: -150px;
+  }
+
+  .overlay-box p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .text1 {
+    width: 512px;
+    height: 138px;
+    margin-bottom: 10px;
+  }
+
+  .text1 p {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .read-more {
+    width: 400px;
+    height: 16px;
+    margin-bottom: 60px;
+    margin-left: -100px;
+  }
+
+  .read-more p {
+    text-decoration: 1px underline;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .quote {
+    width: 296px;
+    height: 226px;
+    margin-top: -210px;
+  }
+
+  .quote p {
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .intro-1 {
+    width: 544px;
+    height: 416px;
+  }
+
+  .overlay-box {
+    position: relative;
+    bottom: 18px;
+    left: -150px;
+  }
+
+  .overlay-box p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .text1 {
+    width: 416px;
+    height: 221px;
+    margin-bottom: 10px;
+  }
+
+  .text1 p {
+    font-size: 44px;
+    text-align: left;
+  }
+
+  .read-more {
+    width: 400px;
+    height: 16px;
+    margin-bottom: 80px;
+  }
+
+  .read-more p {
+    text-decoration: 1px underline;
+    font-size: 16px;
+    text-align: left;
+  }
 }
