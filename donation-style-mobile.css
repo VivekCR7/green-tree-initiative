@@ -1,0 +1,559 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  color: #354463;
+  text-align: center;
+}
+
+.intro p {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 100px;
+  }
+
+  .intro p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 120px;
+  }
+
+  .intro p {
+    font-size: 28px;
+  }
+}
+
+/* Section */
+
+section {
+  display: flex;
+  background-image: url(./donation/annie-spratt-427340-unsplash.png);
+  background-position: 56%;
+  height: 985px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"] {
+  color: #ffffff;
+}
+
+.quote {
+  height: 79px;
+  width: 312px;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.quote p {
+  font-family: "Rock Salt";
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form {
+  height: 816px;
+  width: 312px;
+  background-color: #354463;
+  color: #ffffff;
+}
+
+.form h3 {
+  color: white;
+  margin: 31px 0px 25px 31px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 10px;
+  margin: 0px 9%;
+}
+
+.text-field {
+  border-bottom: 2px solid #c1f7d5;
+}
+
+div #first {
+  grid-column: 1/3;
+}
+
+div #last {
+  grid-column: 3/5;
+}
+
+div #street {
+  grid-column: 1/6;
+}
+
+div #city {
+  grid-column: 1/3;
+}
+
+div #state {
+  grid-column: 3;
+}
+
+div #zip {
+  grid-column: 4;
+}
+
+div #email {
+  grid-column: 1/5;
+}
+
+div #credit {
+  grid-column: 1/5;
+}
+
+.text-field p {
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.text-field input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.text-field select {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #c1f7d5;
+  border: none;
+  font-weight: lighter;
+  background-color: transparent;
+}
+
+.form #expiry p {
+  font-size: 13px;
+}
+
+.form #expiry input {
+  margin-top: 10px;
+}
+
+.form #date p {
+  font-size: 13px;
+}
+
+.form #date input {
+  margin-top: 13px;
+}
+
+.extra-info {
+  width: 73%;
+  height: 60px;
+  margin-top: 31px;
+  margin-left: 31px;
+  float: left;
+}
+
+.extra-info p {
+  font-size: 19px;
+  font-family: Helvetica, sans-serif;
+}
+
+.button {
+  background-color: #c1f7d5;
+  margin: 40% 9%;
+  width: 75%;
+  height: 5%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button button[type="button"] {
+  border: none;
+  background: transparent;
+  position: relative;
+  top: 11px;
+  left: 50px;
+  font-family: Helvetica, sans-serif;
+  color: #354463;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.go-back {
+  position: relative;
+  color: #c1f7d5;
+  text-decoration: 1px underline;
+  font-family: Helvetica, sans-serif;
+  top: -100px;
+  left: 6%;
+  font-size: 14px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  section {
+    height: 1255px;
+    background-repeat: no-repeat;
+  }
+
+  .quote {
+    height: 104px;
+    width: 512px;
+  }
+
+  .quote p {
+    font-size: 29px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .form {
+    height: 1016px;
+    width: 640px;
+  }
+
+  .form h3 {
+    margin: 50px 0px 25px 55px;
+    font-size: 28px;
+  }
+
+  .text-field p {
+    font-size: 15px;
+  }
+
+  .text-field input {
+    height: 55px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  .text-field select {
+    margin-top: 16px;
+    font-size: 22px;
+    color: #c1f7d5;
+    border: none;
+    font-weight: lighter;
+    background-color: transparent;
+  }
+
+  .form #expiry p {
+    font-size: 15px;
+  }
+
+  .form #expiry input {
+    margin-top: 13px;
+  }
+
+  .form #date p {
+    font-size: 15px;
+  }
+
+  .form #sec input {
+    margin-top: 10px;
+  }
+
+  .extra-info {
+    width: 83%;
+    margin-top: 48px;
+    margin-left: 55px;
+  }
+
+  .extra-info p {
+    font-size: 30px;
+  }
+
+  .button {
+    margin: 25% 54%;
+    width: 38%;
+    height: 5%;
+  }
+  .button button[type="button"] {
+    top: 16px;
+    left: 54px;
+    font-size: 16px;
+  }
+
+  .go-back {
+    top: -192px;
+    left: 9%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section {
+    height: 1224px;
+    background: transparent url("donation/annie-spratt-427340-unsplash.png") 0%
+      0% no-repeat padding-box;
+    background-size: cover;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .quote {
+    width: 429px;
+    height: 519px;
+    margin: -500px 0px 0px 0px;
+  }
+
+  .quote p {
+    font-size: 50px;
+    text-align: left;
+    line-height: 90px;
+  }
+
+  .form {
+    height: 1016px;
+    width: 640px;
+  }
+
+  .form h3 {
+    margin: 58px 353px 25px 55px;
+  }
+
+  .text-field p {
+    font-size: 15px;
+  }
+
+  .form #expiry p {
+    font-size: 15px;
+  }
+  .form #date p {
+    font-size: 15px;
+  }
+
+  .form #sec input {
+    margin-top: 11px;
+  }
+
+  .extra-info {
+    margin-top: 57px;
+    margin-left: 64px;
+  }
+
+  .extra-info p {
+    font-size: 29px;
+  }
+
+  .button {
+    margin: 32% 48%;
+    width: 38%;
+    height: 5%;
+  }
+
+  .button button[type="button"] {
+    top: 13px;
+    left: 30px;
+    font-size: 22px;
+  }
+
+  .go-back {
+    top: -237px;
+    left: 64px;
+    font-size: 16px;
+  }
+}
+
+/* Article */
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  grid-gap: 2em 2em;
+  margin: 67px 32px;
+}
+
+.introduction {
+  width: 120px;
+  height: 120px;
+  color: #354463;
+}
+
+.introduction > p {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-us {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.p1 {
+  font-size: 11px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+.p2 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.follow-us {
+  width: 120px;
+  height: 120px;
+  color: #354463;
+  grid-row: 2/4;
+}
+
+.f1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.list {
+  width: 115px;
+  height: 110px;
+  position: relative;
+  left: -3px;
+  margin-top: 5px;
+  color: #354463;
+}
+
+.list > p {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: 0.3px underline;
+  font-family: Helvetica, sans-serif;
+}
+
+.learn-more {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.hashtag-quote {
+  width: 130px;
+  height: 120px;
+  color: #354463;
+}
+
+.hashtag-quote p {
+  font-size: 30px;
+  text-align: right;
+  font-family: "Rock Salt";
+  line-height: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 64px 70px;
+  }
+
+  .introduction {
+    grid-row: 1/3;
+    width: 126px;
+  }
+
+  .p2 {
+    line-height: 20px;
+  }
+
+  .follow-us {
+    order: 3;
+  }
+
+  .hashtag-quote {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hashtag-quote p {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    margin: 70px 160px;
+  }
+
+  .introduction {
+    grid-column: 1;
+  }
+
+  .introduction > p {
+    font-size: 24px;
+  }
+
+  .contact-us {
+    grid-column: 2;
+  }
+
+  .p1 {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+  }
+  .p2 {
+    font-size: 15px;
+  }
+
+  .follow-us {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .f1 {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .list > p {
+    font-size: 15px;
+  }
+
+  .learn-more {
+    grid-column: 3;
+  }
+
+  .hashtag-quote {
+    grid-column: 5;
+  }
+}
