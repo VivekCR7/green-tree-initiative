@@ -540,6 +540,12 @@ ul li {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
+  .section-3 {
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2em 1em;
+  }
+
   .text-quote {
     width: 640px;
     height: 140px;
@@ -615,23 +621,20 @@ ul li {
 
 @media screen and (min-width: 1025px) {
   .section-3 {
+    height: 1072px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr;
     grid-gap: 1em 0em;
   }
 
   .what-we-do {
     grid-column: 1/4;
-    position: relative;
-    left: -460px;
   }
 
   .text-quote {
-    width: 1100px;
+    width: 1122px;
     height: 140px;
     grid-column: 1/4;
-    position: relative;
-    bottom: 300px;
   }
 
   .text-quote p {
@@ -644,8 +647,7 @@ ul li {
     width: 320px;
     height: 528px;
     grid-template-columns: 1fr;
-    position: relative;
-    bottom: 300px;
+    grid-template-rows: 1fr 3fr 1fr;
   }
 
   .image {
@@ -653,12 +655,15 @@ ul li {
     height: 224px;
     background-size: contain;
     position: relative;
-    left: 20px;
-    top: -70px;
+    left: 50px;
+    top: -50px;
   }
 
   #img-1 {
     background-image: url(home/tree-planting.png);
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
   }
 
   #img-2 {
@@ -673,7 +678,7 @@ ul li {
     width: 278px;
     height: 176px;
     text-align: left;
-    margin-top: -70px;
+    align-self: flex-start;
   }
 
   .big1 {
@@ -689,8 +694,9 @@ ul li {
     height: 40px;
     border-radius: 25px;
     background-color: #c1f7d5;
-    position: relative;
-    left: -65px;
+    align-self: flex-start;
+    justify-self: left;
+    margin-left: 20px;
   }
 
   .button2 p {
@@ -1154,5 +1160,560 @@ a i {
     position: relative;
     bottom: 150px;
     left: -25px;
+  }
+}
+
+/* section 6 */
+
+.section-6 {
+  height: 1712px;
+  background-color: #354463;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.quote6 {
+  width: 312px;
+  height: 186px;
+}
+
+.quote6 P {
+  font-family: "flood-std";
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  line-height: 45px;
+}
+
+.image-box6 {
+  background-image: url(home/tree-planting.png);
+  background-position: 65% 40%;
+  width: 312px;
+  height: 312px;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay-box6 {
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  color: #354463;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+
+.overlay-box6 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.earth {
+  width: 312px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-box6 {
+  width: 312px;
+  height: 60px;
+}
+
+.big-box6 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small-box6 {
+  width: 312px;
+  height: 128px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.small-box6 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.button4 {
+  width: 152px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #c1f7d5;
+}
+
+.button4 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #354463;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .section-6 {
+    height: 1225px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+  }
+
+  .quote6 {
+    grid-column: 1/3;
+    width: 800px;
+    height: 90px;
+  }
+
+  .quote6 p {
+    text-align: left;
+    font-size: 60px;
+    margin-left: -50px;
+  }
+
+  .image-box6 {
+    width: 288px;
+    height: 288px;
+  }
+
+  .earth {
+    height: 339px;
+    width: 280px;
+  }
+
+  .big-box6 {
+    width: 280px;
+    height: 100px;
+  }
+
+  .big-box6 p {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .small-box6 {
+    width: 280px;
+    height: 170px;
+  }
+
+  .small-box6 p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  #text-right-side {
+    justify-self: center;
+  }
+
+  #text-left-side {
+    justify-self: center;
+  }
+
+  #right-side-image {
+    justify-self: center;
+  }
+
+  .button4 {
+    align-self: flex-start;
+  }
+  #right-side-image {
+    grid-column: 2;
+  }
+
+  #text-left-side {
+    grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section-6 {
+    height: 1726px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+  }
+
+  .quote6 {
+    grid-column: 1/3;
+    width: 847px;
+    height: 148px;
+  }
+
+  .quote6 p {
+    text-align: left;
+    font-size: 60px;
+  }
+
+  .image-box6 {
+    width: 576px;
+    height: 576px;
+    align-self: flex-start;
+  }
+
+  .earth {
+    height: 576px;
+    width: 576px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  #text-right-side {
+    justify-self: center;
+  }
+
+  #text-left-side {
+    justify-self: center;
+  }
+
+  #right-side-image {
+    justify-self: center;
+  }
+
+  .big-box6 {
+    width: 448px;
+    height: 165px;
+  }
+
+  .big-box6 p {
+    font-size: 47px;
+    text-align: left;
+  }
+
+  .small-box6 {
+    width: 448px;
+    height: 153px;
+    padding: 0;
+    margin-top: -35px;
+  }
+
+  .small-box6 p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .button4 {
+    width: 160px;
+    height: 48px;
+  }
+
+  #right-side-image {
+    grid-column: 2;
+  }
+
+  #text-left-side {
+    grid-row: 3;
+  }
+}
+
+/* section subscribe */
+
+.section-7 {
+  height: 216px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #c1f7d5;
+}
+
+.subscribe-text {
+  width: 322px;
+  height: 78px;
+  grid-column: 1/3;
+}
+
+.subscribe-text p {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+  color: #354463;
+}
+
+.email input {
+  width: 192px;
+  height: 40px;
+  border-radius: 25px;
+  border-color: #00000029;
+  color: #354463;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.subscribe-button {
+  width: 112px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #354463;
+  justify-self: start;
+}
+
+.subscribe-button p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #c1f7d5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .section-7 {
+    grid-template-columns: 4fr 2fr;
+  }
+
+  .subscribe-text {
+    width: 448px;
+    height: 59px;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 120px;
+  }
+
+  .subscribe-text p {
+    font-size: 22px;
+  }
+
+  .email input {
+    width: 448px;
+    height: 40px;
+  }
+
+  .subscribe-button {
+    width: 160px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section-7 {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  .subscribe-text {
+    width: 544px;
+    height: 70px;
+    grid-column: 1;
+  }
+
+  .subscribe-text p {
+    font-size: 28px;
+  }
+
+  .email input {
+    width: 500px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .subscribe-button {
+    width: 160px;
+    height: 48px;
+    justify-self: flex-start;
+  }
+
+  .subscribe-button p {
+    font-size: 18px;
+  }
+}
+
+/* Article */
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  grid-gap: 2em 2em;
+  margin: 67px 32px;
+}
+
+.introduction {
+  width: 120px;
+  height: 120px;
+  color: #354463;
+}
+
+.introduction > p {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-us {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.p1 {
+  font-size: 11px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+.p2 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.follow-us {
+  width: 120px;
+  height: 120px;
+  color: #354463;
+  grid-row: 2/4;
+}
+
+.f1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.list {
+  width: 115px;
+  height: 110px;
+  position: relative;
+  left: -3px;
+  margin-top: 5px;
+  color: #354463;
+}
+
+.list > p {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: 0.3px underline;
+  font-family: Helvetica, sans-serif;
+}
+
+.learn-more {
+  width: 140px;
+  height: 120px;
+  color: #354463;
+}
+
+.hashtag-quote {
+  width: 130px;
+  height: 120px;
+  color: #354463;
+}
+
+.hashtag-quote p {
+  font-size: 30px;
+  text-align: right;
+  font-family: "flood-std";
+  line-height: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 64px 75px;
+    grid-gap: 1em 10em;
+  }
+
+  .introduction {
+    grid-row: 1/3;
+    width: 126px;
+  }
+
+  .p2 {
+    line-height: 20px;
+  }
+
+  #contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #follow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  #learn {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .hashtag-quote {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hashtag-quote p {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .article {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    margin: 70px 160px;
+  }
+
+  .introduction {
+    grid-column: 1;
+  }
+
+  .introduction > p {
+    font-size: 24px;
+  }
+
+  .contact-us {
+    grid-column: 2;
+  }
+
+  .p1 {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+  }
+  .p2 {
+    font-size: 15px;
+  }
+
+  .follow-us {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .f1 {
+    font-size: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .list > p {
+    font-size: 15px;
+  }
+
+  .learn-more {
+    grid-column: 3;
+  }
+
+  .hashtag-quote {
+    grid-column: 5;
   }
 }

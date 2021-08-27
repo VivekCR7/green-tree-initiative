@@ -506,8 +506,19 @@ div #credit {
     line-height: 20px;
   }
 
-  .follow-us {
-    order: 3;
+  #contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #follow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  #learn {
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .hashtag-quote {
