@@ -494,6 +494,7 @@ div #credit {
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   .article {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em, 9em;
     margin: 64px 70px;
   }
 
